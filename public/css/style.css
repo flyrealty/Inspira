@@ -1,6 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Manrope:wght@200;300;400;500;600;700;800&family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+:root {
+  --primary: #1a1a1a;
+  --secondary: #cc003a;
+  --tertiary: #212121;
+  --fourth: #f2f2f2;
+  --fifth: white;
+}
+
 body,
 html {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Poppins", sans-serif; /* Use Poppins font */
   text-rendering: optimizeLegibility !important;
   -webkit-font-smoothing: antialiased !important;
   color: #777;
@@ -8,17 +17,18 @@ html {
   width: 100% !important;
   height: 100% !important;
 }
+
 h2,
 h3,
 h4 {
-  font-family: "Raleway", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 h2 {
   text-transform: uppercase;
   margin: 0 0 20px;
   font-weight: 800;
-  font-size: 36px;
-  color: #333;
+  font-size: 25px;
+  color: #0c1d3c;
 }
 h3 {
   font-size: 20px;
@@ -58,8 +68,6 @@ ol {
 ul,
 ol {
   padding: 0;
-  webkit-padding: 0;
-  moz-padding: 0;
 }
 hr {
   height: 2px;
@@ -81,18 +89,19 @@ hr {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
 }
 #menu a.navbar-brand {
-  font-family: "Raleway", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 24px;
   font-weight: 700;
   color: #333;
   text-transform: uppercase;
 }
 #menu.navbar-default .navbar-nav > li > a {
-  font-family: "Lato", sans-serif;
+  font-family: "Poppins", sans-serif;
   text-transform: uppercase;
-  color: #555;
+  color: #000000;
   font-size: 15px;
-  font-weight: 400;
+
+  font-weight: bold;
   padding: 8px 2px;
   border-radius: 0;
   margin: 9px 20px 0;
@@ -132,6 +141,7 @@ hr {
 .navbar-toggle {
   border-radius: 0;
 }
+
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
   background-color: #fff;
@@ -141,7 +151,7 @@ hr {
   background-color: #608dfd;
 }
 .section-title {
-  margin-bottom: 70px;
+  margin-bottom: 10px;
 }
 .section-title h2 {
   position: relative;
@@ -163,7 +173,7 @@ hr {
   font-size: 18px;
 }
 .btn-custom {
-  font-family: "Raleway", sans-serif;
+  font-family: "Poppins", sans-serif;
   text-transform: uppercase;
   color: #fff;
   background-color: #5ca9fb;
@@ -204,22 +214,12 @@ a:focus,
   outline-offset: none;
 }
 /* Header Section */
-.intro {
-  display: table;
-  width: 100%;
-  padding: 0;
-  background: url(../img/intro-bg.jpg) center center no-repeat;
-  background-color: #e5e5e5;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
-}
+
 .intro .overlay {
-  background: rgba(0, 0, 0, 0.2);
+  margin-top: 80px;
 }
 .intro h1 {
-  font-family: "Raleway", sans-serif;
+  font-family: "Poppins", sans-serif;
   color: #fff;
   font-size: 82px;
   font-weight: 700;
@@ -239,30 +239,29 @@ a:focus,
   margin: 0 auto;
   margin-bottom: 60px;
 }
+
 header .intro-text {
-  padding-top: 350px;
-  padding-bottom: 200px;
+  margin: 355px;
+
   text-align: center;
 }
 /* Features Section */
-#features {
-  background: #f6f6f6;
-}
+
 #features i.fa {
   font-size: 38px;
   margin-bottom: 20px;
   transition: all 0.5s;
-  color: #fff;
+  color: #000000;
   width: 100px;
   height: 100px;
   padding: 30px 0;
-  border-radius: 50%;
-  background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
-  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.05);
+  /* border-radius: 50%; */
+  /* background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.05); */
 }
 /* About Section */
 #about {
-  padding: 100px 0;
+  margin-bottom: 30px;
 }
 #about h3 {
   font-size: 22px;
@@ -290,7 +289,7 @@ header .intro-text {
 }
 #about .about-text li:before {
   content: "\f00c";
-  font-family: "FontAwesome";
+  font-family: "Poppins";
   color: #5ca9fb;
   font-size: 11px;
   font-weight: 300;
@@ -306,6 +305,7 @@ header .intro-text {
 #about p {
   line-height: 24px;
   margin: 30px 0;
+  color: #0c1d3c;
 }
 /* Services Section */
 #services {
@@ -353,10 +353,11 @@ header .intro-text {
 /* Portfolio Section */
 #portfolio {
   padding: 100px 0;
+  background-color: #f6f6f6;
 }
 .portfolio-item {
   margin: 1px -15px 0 -14px;
-  padding: 0;
+  padding: 20px;
 }
 .portfolio-item .hover-bg {
   overflow: hidden;
@@ -367,6 +368,7 @@ header .intro-text {
   position: absolute;
   text-align: center;
   margin: 0 auto;
+  padding: 20px;
   color: #fff;
   background: linear-gradient(
     to right,
@@ -387,12 +389,12 @@ header .intro-text {
   transition: all 0.3s;
   font-size: 18px;
   letter-spacing: 1px;
-  font-weight: 500;
+  font-weight: bold;
   text-transform: uppercase;
 }
 .hover-bg:hover .hover-text > h4 {
   opacity: 1;
-  -webkit-backface-visibility: hidden;
+
   -webkit-transform: translateY(0);
   transform: translateY(0);
 }
@@ -400,9 +402,9 @@ header .intro-text {
   opacity: 1;
 }
 /* Testimonials Section */
+
 #testimonials {
-  padding: 100px 0;
-  background: #f6f6f6;
+  background: white;
 }
 #testimonials i {
   color: #e6e6e6;
@@ -441,7 +443,9 @@ header .intro-text {
 }
 /* Team Section */
 #team {
-  padding: 100px 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background: #ffffff;
 }
 #team h4 {
   margin: 5px 0;
@@ -460,17 +464,17 @@ header .intro-text {
 /* Contact Section */
 #contact {
   padding: 100px 0 60px;
-  background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
+  background: #f6f6f6;
   color: rgba(255, 255, 255, 0.75);
 }
 #contact .section-title {
-  margin-bottom: 40px;
+  margin-bottom: -102px;
 }
 #contact .section-title p {
   font-size: 16px;
 }
 #contact h2 {
-  color: #fff;
+  color: #0c1d3c;
   margin-top: 10px;
   margin-bottom: 15px;
   padding-bottom: 15px;
@@ -500,17 +504,18 @@ header .intro-text {
 }
 #contact .btn-custom {
   margin: 30px 0;
-  background: transparent;
+  background: #0c1d3c;
   border: 2px solid #fff;
+  border-radius: 0.7rem;
 }
 #contact .btn-custom:hover {
-  color: #1f386e;
-  background: #fff;
+  color: white;
+  background: #0c1d3c;
 }
 label {
   font-size: 12px;
   font-weight: 400;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
   float: left;
 }
 #contact .form-control {
@@ -602,5 +607,88 @@ label {
 @media (max-width: 768px) {
   #about img {
     margin: 50px 0;
+  }
+}
+
+.logo-image {
+  width: 105px;
+  height: auto;
+  margin-left: -85px;
+}
+
+@media only screen and (max-width: 600px) {
+  /* Adjust styles for mobile devices with a screen width up to 600 pixels */
+  .logo-image {
+    width: 50px; /* Adjust the width for smaller screens */
+    margin-left: 0; /* Remove the negative margin for better positioning on smaller screens */
+  }
+}
+@media only screen and (max-width: 768px) {
+  .logo-image {
+    width: 80px; /* Adjust the width for smaller screens */
+    margin-left: -120px; /* Adjust the margin for smaller screens */
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .logo-image {
+    width: 120px; /* Adjust the width for medium-sized screens */
+    margin-left: -240px; /* Adjust the margin for medium-sized screens */
+  }
+}
+
+/* Media Queries for Tablets (768px) */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  #about img {
+    margin: 50px 0;
+  }
+
+  .logo-image {
+    width: 120px; /* Adjust the width for medium-sized screens */
+    margin-left: -240px; /* Adjust the margin for medium-sized screens */
+  }
+}
+
+/* Media Queries for Mobiles (600px) */
+@media only screen and (max-width: 600px) {
+  #about img {
+    margin: 30px 0;
+    width: 100%; /* Make images responsive within their container */
+  }
+
+  .logo-image {
+    width: 50px; /* Adjust the width for smaller screens */
+    margin-left: 0; /* Remove the negative margin for better positioning on smaller screens */
+  }
+
+  /* Additional adjustments for mobile layout */
+  h2 {
+    font-size: 20px;
+  }
+
+  h3 {
+    font-size: 16px;
+  }
+
+  h4 {
+    font-size: 14px;
+  }
+
+  .btn-custom {
+    padding: 12px 24px;
+    font-size: 14px;
+  }
+
+  #menu.navbar-default .navbar-nav > li > a {
+    font-size: 14px;
+    margin: 9px 10px 0;
+  }
+
+  #menu.navbar-default .navbar-toggle {
+    margin: 12px 15px;
+  }
+
+  #contact .form-control {
+    font-size: 14px;
   }
 }
